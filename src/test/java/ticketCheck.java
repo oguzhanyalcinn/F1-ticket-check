@@ -56,7 +56,7 @@ public class ticketCheck {
 
         // Send e-mail according to result
 
-        if (!driver.findElement(ticketPrice).getText().contains("Not available")) {
+        if (driver.findElement(ticketPrice).getText().contains("Not available")) {
             System.out.println("Bilet yok, köyüne dön.");
         } else {
             Properties prop = new Properties();
